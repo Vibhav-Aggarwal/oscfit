@@ -4,6 +4,8 @@
 [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](LICENSE)
 [![Python Version](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue.svg)](https://www.python.org/)
 [![Powered by SunPy](https://img.shields.io/badge/powered%20by-SunPy-orange.svg)](https://sunpy.org/)
+[![Research Paper](https://img.shields.io/badge/paper-PDF%20Manuscript-red.svg)](paper/manuscript.pdf)
+[![JOSS Paper](https://img.shields.io/badge/JOSS-Draft%20Submission-blue.svg)](paper/paper.md)
 [![Code Style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 **End-to-end analysis of decayless kink oscillations in coronal loops.**
@@ -104,8 +106,26 @@ Shrivastav et al. (2025) Table 2 B-values are self-consistent with ρ ≈ 2.12×
 kg/m³ (n_e ≈ 1.07×10¹⁵ m⁻³), rather than the ρ = 1.67×10⁻¹² stated in the paper text (which
 would yield B ~11% lower). A minor internal inconsistency oscfit surfaced during automated verification.
 
+## Scientific Paper & Citation
+
+If you use `oscfit` in your research, please cite the accompanying manuscript and software:
+
+```bibtex
+@article{Aggarwal2026_oscfit,
+  author    = {{Aggarwal}, Vibhav},
+  title     = {{oscfit}: An Automated Bayesian Framework and Seismological Inversion Pipeline for Decayless Kink Oscillations in Solar Coronal Loops},
+  journal   = {arXiv preprint / Journal of Open Source Software},
+  year      = {2026},
+  url       = {https://github.com/Vibhav-Aggarwal/oscfit}
+}
+```
+
+* **Full Preprint PDF**: [`paper/manuscript.pdf`](paper/manuscript.pdf) (8 pages, AASTeX/camera-ready)
+* **JOSS Paper Draft**: [`paper/paper.md`](paper/paper.md) (Journal of Open Source Software submission)
+* **Figure Generation Script**: [`paper/generate_figures.py`](paper/generate_figures.py)
+
 ## Author
-**Vibhav Aggarwal** ([@Vibhav-Aggarwal](https://github.com/Vibhav-Aggarwal)) • [vibhav.aggarwal2@gmail.com](mailto:vibhav.aggarwal2@gmail.com)
+**Vibhav Aggarwal** ([@Vibhav-Aggarwal](https://github.com/Vibhav-Aggarwal)) • [vibhav.aggarwal2@gmail.com](mailto:vibhav.aggarwal2@gmail.com) • ORCID: [0009-0000-7686-7119](https://orcid.org/0009-0000-7686-7119)
 
 ## License
 BSD-3-Clause
