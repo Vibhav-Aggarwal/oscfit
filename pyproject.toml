@@ -1,0 +1,61 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oscfit"
+version = "0.1.0"
+description = "End-to-end analysis of decayless kink oscillations in coronal loops"
+readme = "README.md"
+license = {text = "BSD-3-Clause"}
+requires-python = ">=3.10"
+authors = [
+    {name = "Vibhav Aggarwal", email = "vibhav.aggarwal2@gmail.com"},
+]
+keywords = [
+    "solar physics", "coronal loops", "kink oscillations",
+    "MHD waves", "coronal seismology", "Solar Orbiter",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Astronomy",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "numpy>=1.22",
+    "scipy>=1.9",
+    "matplotlib>=3.6",
+    "astropy>=5.0",
+    "emcee>=3.1",
+    "dynesty>=2.1",
+    "corner>=2.2",
+    "lmfit>=1.2",
+    "scikit-image>=0.20",
+]
+
+[project.optional-dependencies]
+sunpy = ["sunpy>=5.0", "ndcube>=2.0"]
+scope = ["scope-emd>=1.0"]
+magnify = ["dtcwt>=0.14"]
+dev = ["pytest>=7.0", "pytest-cov>=4.0"]
+all = ["oscfit[sunpy,scope,magnify,dev]"]
+
+[project.scripts]
+oscfit = "oscfit.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Vibhav-Aggarwal/oscfit"
+Documentation = "https://github.com/Vibhav-Aggarwal/oscfit#readme"
+Issues = "https://github.com/Vibhav-Aggarwal/oscfit/issues"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
+
+[tool.setuptools.packages.find]
+include = ["oscfit*"]
