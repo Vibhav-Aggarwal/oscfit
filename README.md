@@ -1,5 +1,11 @@
 # oscfit
 
+[![CI](https://github.com/Vibhav-Aggarwal/oscfit/actions/workflows/ci.yml/badge.svg)](https://github.com/Vibhav-Aggarwal/oscfit/actions/workflows/ci.yml)
+[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](LICENSE)
+[![Python Version](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue.svg)](https://www.python.org/)
+[![Powered by SunPy](https://img.shields.io/badge/powered%20by-SunPy-orange.svg)](https://sunpy.org/)
+[![Code Style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
 **End-to-end analysis of decayless kink oscillations in coronal loops.**
 
 A modern Python replacement for the unmaintained IDL tools Auto-NUWT (loop tracking,

@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software in your research, please cite it as below."
+authors:
+  - family-names: Aggarwal
+    given-names: Vibhav
+    email: vibhav.aggarwal2@gmail.com
+    orcid: "https://orcid.org/0009-0000-7686-7119"
+title: "oscfit: End-to-end analysis of decayless kink oscillations in coronal loops"
+version: 0.1.0
+date-released: 2026-11-11
+license: BSD-3-Clause
+repository-code: "https://github.com/Vibhav-Aggarwal/oscfit"
+keywords:
+  - "solar physics"
+  - "coronal loops"
+  - "kink oscillations"
+  - "MHD waves"
+  - "coronal seismology"
+  - "Solar Orbiter"
+  - "SDO"
