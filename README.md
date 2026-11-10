@@ -120,7 +120,8 @@ If you use `oscfit` in your research, please cite the accompanying manuscript an
 }
 ```
 
-* **Full Preprint PDF**: [`paper/manuscript.pdf`](paper/manuscript.pdf) (8 pages, AASTeX/camera-ready)
+* **Preprint PDF (Elsevier 2-Column)**: [`paper/aggarwal-2026-oscfit-bayesian-coronal-seismology-v1.pdf`](paper/aggarwal-2026-oscfit-bayesian-coronal-seismology-v1.pdf)
+* **Preprint PDF (AASTeX/arXiv Style)**: [`paper/manuscript.pdf`](paper/manuscript.pdf)
 * **JOSS Paper Draft**: [`paper/paper.md`](paper/paper.md) (Journal of Open Source Software submission)
 * **Figure Generation Script**: [`paper/generate_figures.py`](paper/generate_figures.py)
 
