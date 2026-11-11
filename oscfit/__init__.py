@@ -12,7 +12,7 @@ Quick start::
     print(seismo.summary())
 """
 
-__version__ = "0.1.0"
+__version__ = "1.0.0"
 
 from oscfit.models import MODELS
 from oscfit.detect import detect_periods
