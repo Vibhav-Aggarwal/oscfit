@@ -66,6 +66,8 @@ Background trends $B(t)$ are modeled simultaneously as low-order polynomials ($c
 
 # Software Architecture
 
+![Figure 1: Architectural pipeline of oscfit from raw 3D FITS data cubes to Bayesian fitting, model selection, and MHD seismological inversion.](figures/fig1_pipeline_architecture.png)
+
 The package is organized into decoupled, unit-tested components:
 
 ```
@@ -99,12 +101,16 @@ Raw FITS Data Cube
 
 # Validation & Benchmarks
 
+![Figure 2: Bayesian MCMC fit of a synthetic decayless transverse kink oscillation ($P=240$ s, $A=85$ km) with 1-$\sigma$ credible interval and residual distribution.](figures/fig2_synthetic_oscillation_fit.png)
+
 The accuracy and scientific validity of `oscfit` have been verified against three independent, peer-reviewed observational catalogs spanning both decaying and decayless regimes across multiple spaceborne instruments:
 
 1. **Solar Orbiter / EUI Decayless Catalog [@Shrivastav2024]**:
    - Re-analysis of all 105 active-region and 42 quiet-Sun loop oscillations observed by the High Resolution Imager (HRI$_{\text{EUV}}$) at 174 Å.
-   - `oscfit` reproduces published kink speeds ($C_k$) to **0.1%** and magnetic field strengths ($B$) to **0.5%** across all loops.
+   - `oscfit` reproduces published kink speeds ($C_k$) to **0.1%** and magnetic field strengths ($B$) to **0.5%** across all loops (Figure 3).
    - *Literature Finding*: `oscfit`'s automated validation revealed a subtle numerical inconsistency in the published reference text: Table 2 magnetic field values were derived self-consistently with $\rho_0 \approx 2.12 \times 10^{-12} \text{ kg m}^{-3}$ ($n_e \approx 1.07 \times 10^{15} \text{ m}^{-3}$), rather than the value of $\rho = 1.67 \times 10^{-12} \text{ kg m}^{-3}$ quoted in the paper text (which would have yielded $B$ systematically ~11% lower).
+
+![Figure 3: Benchmark parity comparison of calculated vs published kink speeds and magnetic fields across 105 active-region loops from Solar Orbiter/EUI [@Shrivastav2024].](figures/fig4_shrivastav_comparison.png)
 2. **SDO / AIA 24th Solar Cycle Decaying Catalog [@Nechaeva2019]**:
    - Benchmarked against 221 large-scale decaying kink oscillation events.
    - Reconstructed kink speed distributions achieve complete consistency with the published median ($1407 \text{ km s}^{-1}$ calculated vs. $1330 \text{ km s}^{-1}$ published), with 100% of events falling within the 95% observational confidence interval.
