@@ -5,7 +5,7 @@
 [![Python Version](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue.svg)](https://www.python.org/)
 [![Powered by SunPy](https://img.shields.io/badge/powered%20by-SunPy-orange.svg)](https://sunpy.org/)
 [![Research Paper](https://img.shields.io/badge/paper-PDF%20Manuscript-red.svg)](paper/manuscript.pdf)
-[![JOSS Paper](https://img.shields.io/badge/JOSS-Draft%20Submission-blue.svg)](paper/paper.md)
+[![JOSS Status](https://img.shields.io/badge/JOSS-In%20Review-brightgreen.svg)](https://joss.theoj.org/papers/84a9ed30d656b021760e68758362501c)
 [![Code Style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 **End-to-end analysis of decayless kink oscillations in coronal loops.**
